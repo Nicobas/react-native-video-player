@@ -3,10 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
-    <com.ksyun.media.player.KSYTextureView
-        android:id="@+id/ksy_textureview"
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        tools:targetApi="ice_cream_sandwich"/>
+	    android:layout_height="match_parent"
+        card_view:cardCornerRadius="10dp">
+        <com.ksyun.media.player.KSYTextureView
+            android:id="@+id/ksy_textureview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            tools:targetApi="ice_cream_sandwich"/>
+    </android.support.v7.widget.CardView>
 </RelativeLayout>
